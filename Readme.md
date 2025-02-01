@@ -29,12 +29,18 @@ python3 -m venv venv
 ```
 pip3 install -r ./requirements.txt
 ```
-4. Run example!
+4. Build C++ native shared library
+
+```
+./build.sh
+```
+
+5. Run example!
 
 ```
 python3 ./src/python/main.py 
 ```
 
-## Compile native code (C++) as shared library.
+## Useful information
 
-g++ -shared -o api.so -fPIC api.cpp
+- [Medium: Ollama Tool Calling](https://medium.com/@danushidk507/ollama-tool-calling-8e399b2a17a8)
