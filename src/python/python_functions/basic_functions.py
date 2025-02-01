@@ -3,8 +3,8 @@ def add_two_numbers(a: int, b: int) -> int:
     Add two numbers
 
     Args:
-        a: The first integer number
-        b: The second integer number
+        a (int): The first integer number
+        b (int): The second integer number
 
     Returns:
         int: The sum of the two numbers
