@@ -48,8 +48,12 @@ if __name__ == "__main__":
         },
         {
             'role': 'user', 
-            'content': 'What is the average of 10, 20, 20.8 and 30?'
+            'content': 'What is the average of the following numbers: 10, 20, 20.8 and 30?'
         },
+        {
+            'role': 'user', 
+            'content': 'What is the average of the following numbers: 100.50, 99.50, 99.40 and 100.60?'
+        },        
         {
             'role': 'user', 
             'content': 'What is 22 - 2?'
@@ -57,7 +61,11 @@ if __name__ == "__main__":
         {
             'role': 'user', 
             'content': 'What is the conjugate angle of 270º?'
-        }                
+        },
+        {
+            'role': 'user', 
+            'content': 'What is the conjugate angle of 350º?'
+        }                    
     ]
 
     main(llm_request_messages=client_messages)
