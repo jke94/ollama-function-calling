@@ -3,12 +3,14 @@ import ollama
 from native_functions.basic_native_functions import add_two_numbers
 from native_functions.basic_native_functions import calculate_average
 
+from python_functions.basic_functions import calculate_conjugate_angle
 from python_functions.basic_functions import subtract_two_numbers
 
 # Dictionary with the available functions
 available_functions = {
     "add_two_numbers": add_two_numbers,
     "calculate_average": calculate_average,
+    "calculate_conjugate_angle": calculate_conjugate_angle,
     "subtract_two_numbers": subtract_two_numbers
 }
 
@@ -20,6 +22,7 @@ def main(llm_request_messages:dict):
         tools=[
             add_two_numbers,
             calculate_average,
+            calculate_conjugate_angle,
             subtract_two_numbers
         ]
     )
@@ -50,7 +53,11 @@ if __name__ == "__main__":
         {
             'role': 'user', 
             'content': 'What is 22 - 2?'
-        }        
+        },
+        {
+            'role': 'user', 
+            'content': 'What is the conjugate angle of 270º?'
+        }                
     ]
 
     main(llm_request_messages=client_messages)

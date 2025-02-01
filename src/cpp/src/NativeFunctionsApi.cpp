@@ -5,7 +5,7 @@ int add_two_numbers(int a, int b)
     return a + b;
 }
 
-float calcular_media(float* numeros, int tam) 
+float calculate_average(float* numeros, int tam) 
 {
     double suma = 0;
 

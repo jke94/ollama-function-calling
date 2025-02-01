@@ -1,16 +1,3 @@
-def add_two_numbers(a: int, b: int) -> int:
-    """
-    Add two numbers
-
-    Args:
-        a (int): The first integer number
-        b (int): The second integer number
-
-    Returns:
-        int: The sum of the two numbers
-    """
-    return a + b
-
 def subtract_two_numbers(a: int, b: int) -> int:
     """
     Subtract two numbers
@@ -23,3 +10,15 @@ def subtract_two_numbers(a: int, b: int) -> int:
         int: The subtract of the two numbers
     """
     return a - b
+
+def calculate_conjugate_angle(angle:float) -> float:
+    """
+    Calculate the conjugate angle to another given angle
+
+    Args:
+        angle (float): The first integer number
+
+    Returns:
+        float: The conjugate angle to another given angle
+    """
+    return 360 - angle
